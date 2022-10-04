@@ -1,0 +1,33 @@
+/* ========================
+||ПОСТІЙНІ КЛІЄНТИ
+============================*/
+
+.clients__list {
+    display: flex;
+    gap: 30px;
+}
+
+.clients__item {
+    width: calc((100% - 150px) / 6);
+}
+
+.clients__link {
+    color: var(--clients-icon-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 92px;
+    border: 1px solid var(--clients-icon-color);
+    border-radius: 4px;
+    transition: color var(--anim-fast), border-color var(--anim-fast);
+    &:hover,
+    &:focus {
+        color: var(--prime-accent-color);
+        border-color: var(--prime-accent-color);
+    }
+}
+
+.clients__icon {
+    fill: currentColor;
+}

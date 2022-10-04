@@ -1,0 +1,129 @@
+/* HEADER_____________STYLES */
+
+.nav-wrap {
+    position: sticky;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.link.current {
+    color: var(--prime-accent-color);
+}
+
+.page-header {
+    border-bottom: 1px solid var(--header-border-color);
+}
+
+
+/* ------------LogoStyle ----------*/
+
+.home-link {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--prime-black-color);
+}
+
+
+/* ------------Navigation----------*/
+
+.logo-span {
+    color: var(--prime-accent-color);
+}
+
+.nav-wrap {
+    display: flex;
+    margin-left: 93px;
+}
+
+.nav-tabs {
+    display: flex;
+    gap: 50px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.nav-tabs li:last-child {
+    margin-right: 0px;
+}
+
+.nav-tabs .tab-link {
+    display: block;
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.nav-tabs .link.current {
+    color: var(--prime-accent-color);
+}
+
+.tab-link {
+    position: relative;
+    color: var(--prime-title-color);
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    transition: color var(--anim-fast);
+    &:hover,
+    &:focus {
+        color: var(--prime-accent-color);
+    }
+}
+
+.tab-link.current::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -1px;
+    transform: translateX(-50%);
+    display: inline-flex;
+    width: calc(100% + 2px);
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--prime-accent-color);
+}
+
+.nav-contacts {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+}
+
+
+/* Contacts Style */
+
+.nav-contact-link {
+    display: flex;
+    align-items: center;
+    color: var(--prime-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color var(--anim-fast);
+    &:hover,
+    &:focus {
+        color: var(--prime-accent-color);
+    }
+}
+
+.nav-contacts-icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.nav-contact-icon:not(:last-child) {
+    padding-right: 10px;
+}
+
+.nav-contact-span {
+    display: inline-block;
+}

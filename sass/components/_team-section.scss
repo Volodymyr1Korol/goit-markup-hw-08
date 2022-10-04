@@ -1,0 +1,63 @@
+/* Team section style */
+
+.team-wrap {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.team-title {
+    display: flex;
+    gap: 30px;
+}
+
+.team-title .title {
+    font-weight: 500;
+    color: var(--prime-title-color);
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+.team-info {
+    font-size: 16px;
+    line-height: 1.18;
+    margin-bottom: 16px;
+}
+
+.team-wrap .title {
+    margin-bottom: 10px;
+}
+
+.team-item {
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--prime-color);
+}
+
+.social-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--clients-icon-color);
+    background-color: var(--prime-color);
+    transition: color var(--anim-fast), background-color var(--anim-fast);
+    &:hover,
+    &:focus {
+        background-color: var(--prime-accent-color);
+        color: var(--prime-color);
+    }
+}
+
+.social-icon {
+    fill: currentColor;
+}

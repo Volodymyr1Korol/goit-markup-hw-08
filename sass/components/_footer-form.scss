@@ -1,0 +1,70 @@
+/* ===============FOOTER FORM============ */
+
+.footer-form {
+    margin-left: auto;
+    width: 570px;
+}
+
+.footer-paragraph {
+    margin-bottom: 20px;
+    color: var(--prime-color);
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+}
+
+.footer-send-form {
+    display: flex;
+}
+
+.footer-send-label {
+    margin-right: 12px;
+}
+
+.footer-email-input {
+    position: relative;
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+}
+
+.footer-email-input::placeholder {
+    width: 47px;
+    height: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.03em;
+}
+
+.footer-email-bottom {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    padding: 13px 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    background-color: var(--prime-accent-color);
+    color: var(--prime-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
