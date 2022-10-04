@@ -1,0 +1,26 @@
+//breakpoints
+//1. Mobile screen 480px
+//2. Tablet 768px
+//3. dekstop 1200px
+.container {
+    max-width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    //tablet
+    @media screen and (min-width: 768px) {
+        max-width: 738px;
+    }
+    //dekstop
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+    }
+}
+
+// .container {
+//     width: 1200px;
+//     margin: 0 auto;
+//     padding-right: 15px;
+//     padding-left: 15px;
+// }

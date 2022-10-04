@@ -5,13 +5,10 @@
     letter-spacing: 0.03em;
 }
 
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 img {
     display: block;
+    width: 100%;
+    height: auto;
 }
 
 a {
@@ -35,13 +32,6 @@ h6,
 p {
     margin: 0;
     padding: 0;
-}
-
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    padding-right: 15px;
-    padding-left: 15px;
 }
 
 .list {

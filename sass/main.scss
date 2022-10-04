@@ -1,11 +1,13 @@
 @import "./utilities/variables";
 @import "./components/base";
+@import "./utilities/container";
+@import "./utilities/section";
 // HEADER
 @import "./components/header";
 // HERO
 @import "./components/hero";
 //INFO-Section
-@import "./components/info-section";
+@import "./components/feature_section";
 //Img cards main page
 @import "./components/ourjob";
 //team-section
