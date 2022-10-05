@@ -1,9 +1,5 @@
 /* HEADER_____________STYLES */
 
-.nav-wrap {
-    position: sticky;
-}
-
 .flex {
     display: flex;
     align-items: center;
@@ -26,6 +22,10 @@
     font-size: 26px;
     line-height: 1.2;
     color: var(--prime-black-color);
+    @include mq('t', max) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
 }
 
 
@@ -36,8 +36,13 @@
 }
 
 .nav-wrap {
-    display: flex;
-    margin-left: 93px;
+    @include mq('t', max) {
+        display: none;
+    }
+    @include mq('t') {
+        display: flex;
+        margin-left: 93px;
+    }
 }
 
 .nav-tabs {
@@ -90,9 +95,19 @@
 }
 
 .nav-contacts {
-    display: flex;
-    gap: 50px;
-    margin-left: auto;
+    @include mq('t', max) {
+        display: none;
+    }
+    @include mq('t') {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: auto;
+    }
+    @include mq('d') {
+        flex-direction: row;
+        gap: 50px;
+    }
 }
 
 
@@ -106,12 +121,14 @@
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    padding-top: 32px;
-    padding-bottom: 32px;
     transition: color var(--anim-fast);
     &:hover,
     &:focus {
         color: var(--prime-accent-color);
+    }
+    @include mq('d') {
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 }
 

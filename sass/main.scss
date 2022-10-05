@@ -1,9 +1,11 @@
 @import "./utilities/variables";
+@import "./utilities/mixins";
 @import "./components/base";
 @import "./utilities/container";
 @import "./utilities/section";
 // HEADER
 @import "./components/header";
+@import "./components/menu";
 // HERO
 @import "./components/hero";
 //INFO-Section
