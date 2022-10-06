@@ -1,5 +1,11 @@
 /* -------img section----------- */
 
+.jobs {
+    @include mq('d', max) {
+        display: none;
+    }
+}
+
 .jobs__list {
     display: flex;
     gap: 30px;

@@ -11,10 +11,25 @@
     min-height: 600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/header-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_m.jpg);
+    @include mq("retina") {
+        background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_m@2x.jpg);
+    }
+    @include mq("t") {
+        background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_t);
+        @include mq("retina") {
+            background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_t@2x.jpg);
+        }
+    }
+    @include mq("d") {
+        background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_d.jpg);
+        @include mq("retina") {
+            background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_d@2x.jpg);
+        }
+    }
 }
 
 .hero__container {
@@ -23,24 +38,23 @@
 
 .hero__title {
     color: var(--prime-color);
-    width: 696px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-}
-
-.section-title {
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    color: var(--prime-title-color);
+    @include mq('t') {
+        max-width: 360px;
+    }
+    @include mq("d") {
+        max-width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 
 

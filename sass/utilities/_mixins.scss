@@ -1,4 +1,4 @@
-$breakpoints: ( 'm': 480px, 't': 768px, 'd': 1200px, );
+$breakpoints: ( "m": 480px, "t": 768px, "d": 1200px, "retina": "retina", );
 @mixin mq($width, $type: min) {
     @if map_has_key($breakpoints, $width) {
         $width: map_get($breakpoints, $width);
@@ -6,6 +6,11 @@ $breakpoints: ( 'm': 480px, 't': 768px, 'd': 1200px, );
             $width: $width - 1px;
         }
         @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+    @if map_has_key($breakpoints, $width) {
+        @media only screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
             @content;
         }
     }

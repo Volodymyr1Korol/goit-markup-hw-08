@@ -48,3 +48,15 @@ ul {
     margin: 0;
     padding-left: 0;
 }
+
+.section-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--prime-title-color);
+    @include mq('d') {
+        font-size: 36px;
+    }
+}

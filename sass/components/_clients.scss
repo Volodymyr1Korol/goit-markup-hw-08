@@ -4,11 +4,22 @@
 
 .clients__list {
     display: flex;
+    justify-content: center;
     gap: 30px;
+    @include mq('d', max) {
+        flex-wrap: wrap
+    }
 }
 
 .clients__item {
-    width: calc((100% - 150px) / 6);
+    height: 92px;
+    flex: 1 1 calc((100% - 30px) / 2);
+    @media screen and (min-width: 768px) {
+        flex: 1 1 calc((100% - 60px) / 3);
+    }
+    @media screen and (min-width: 1200px) {
+        flex: 1 1 calc((100% - 150px) / 6);
+    }
 }
 
 .clients__link {
