@@ -498,13 +498,18 @@ ul {
 /* Hero SEction */
 .hero {
   background-color: var(--hero-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+@media only screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero--overlay {
   max-width: 1600px;
-  min-height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
@@ -680,6 +685,9 @@ ul {
 }
 
 /* -------img section----------- */
+.jobs {
+  padding-top: 0;
+}
 @media only screen and (max-width: 1199px) {
   .jobs {
     display: none;

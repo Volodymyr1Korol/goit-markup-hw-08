@@ -1,6 +1,7 @@
 /* -------img section----------- */
 
 .jobs {
+    padding-top: 0;
     @include mq('d', max) {
         display: none;
     }
